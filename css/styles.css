@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: "Roboto", sans-serif; tipografia parrafos/
+color: #0e0582; #1aea20;#020e00;#999a9a;  Colores /
+*/
+/* páginas en desarrollo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header { 
+  background-color: #020e00;
+  }
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ padding: 1.5rem;
+ }
+
+.logo img {
+  width: 180px;
+  border-radius: 25px;
+  margin:0 18px;
+  background-color: none;
+}
+
+/* Navegacion*/
+.nav ul {
+  list-style: none;
+}
+.li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 60px;
+  transition: all 0, 5s;
+}
+.li:hover {
+  transform: scale(1.3);
+}
+a {
+  color: #0df115;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #0e0582;
+  font-size: 28px;
+ 
+}
+/* fin del nav */
+
+/* redes sociales  */
+
+.red-s {
+  margin: 12px;
+  padding: 12px;
+  text-align: right;
+}
+.red {
+  text-align: right;
+}
+.redes {
+  width: 100%;
+  color: #999a9a;
+  font-size: 18px;
+  padding: 2px;
+}
+
+/* textos y parrafos */
+
+h1 {
+  color: #1aea20;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3rem;
+  
+}
+h1:hover {
+  color: #0e0582;
+  font: size 48px;
+}
+
+h2 {
+  color: #0e0582;
+  font-size: 36px;
+  text-align: center;
+  padding: 1.5rem;
+}
+h3 {
+  color: #0e0582;
+  font-size: 32px;
+  text-align: center;
+}
+p {
+  border: 1px solid #020e00;
+  color: #020e00;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  height: auto;
+  padding: 12px;
+  margin: 12px;
+  width: 60%;
+}
+
+/* seccion 1de inicio*/
+.section1{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:auto;
+  margin:4px;
+  padding: 24px;
+  background-color: rgb(172, 243, 243);
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  }
+.section1 h2{
+  font-size: 3.80rem;
+  
+}
+.img {
+  width: 60vw;
+  height: 480px;
+  padding: 12px;
+  border-radius: 20px;
+}
+.cont-texto p{
+  width: 70%;
+  height: auto;
+  padding: .75rem;
+  border: none;
+}
+
+/* seccion 2 de inicio 
+ */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 4px;
+}
+
+.section2 i {
+  margin: 8px;
+  padding: 16px;
+  font-size: 24px;
+}
+.img1 {
+  width: 45%;
+  height: 250px;
+  margin: 12px;
+  border-radius: 15px;
+ 
+}
+.row2{
+  flex-direction:row;
+  width:60%;
+  align-items: center;
+}
+.items { 
+  width: 80%;
+  padding: 8px;
+}
+.items h2{
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.sec-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  align-content: center;
+  background-color:#999a9a;
+
+} 
+
+/* articulos*/
+
+.arti-1 {
+  background-image: url("../assets/conciencia.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin: bottom 2rem;
+  padding: 3.5rem;
+}
+.arti-2 {
+  margin: 1.125rem;
+  padding: 1rem;
+  text-align: center;
+}
+.row3{
+  display: flex;
+  flex-direction: column;
+
+}
+.articulos{
+  margin: .75rem;
+  padding-left: .75rem;
+  
+}
+.articulos p{
+  flex-direction: row;
+  width: 80%;
+  height: 100%;
+  border: none;
+    
+}
+
+/* footer*/
+
+footer {
+  background-color: #020e00;
+  padding: 12px;
+  margin-top: 12px;
+ 
+}
+.footer-container{
+  display: grid;
+  grid-template-columns:4fr 3fr 3fr;
+  grid-template-rows: repeat(3, 4fr);
+  justify-content: center;
+  width: 100%;
+  height: 18rem;
+
+}
+.foot-rows{
+ align-items: center; 
+background-color:#999a9a;
+border-radius: .9375rem; 
+margin:.25rem ;
+padding: .5rem;
+}
+
+.f-texto {
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+
+.pagos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+  margin: 6px;
+  padding: 4px;
+}
+
+.img-footer {
+  width: 100%;
+  border: 1px solid #020e00;
+ width: 7.75rem;
+ height: 4.6875rem;
+  background-image:cover;
+}
+.contactos ul li {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px;
+  margin: .375rem;
+  list-style-type: none;
+
+ 
+ }
+
+ .f-boton {
+  background-color: #0df115;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: .75rem;
+  padding: 12px;  
+}
+.copy{
+  display: flex;
+  justify-content: center;
+  color:#999a9a;
+  font-size: .875rem;
+  padding: 12px;
+
+  
+}
+
+/* pagina nosotros */
+
+.seccion1{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 78rem;
+  margin: 1rem;
+  padding: 16px;
+ 
+}
+.nos1{
+  width: 80%;  
+  height: 600px;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 12px;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+  border-radius: 15px;
+
+}
+.nos2{
+  width: 80%;
+  height: 600px;
+  background-image: url(../assets/inspira.jpg);
+  background-repeat: no-repeat;
+  background-size:auto;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 12px;
+  flex-direction: column;
+  margin: 12px;
+  border-radius: 15px;
+
+
+}
+.img2{
+  width: 90%;
+  height: 280px;
+  margin: 8px 30px;
+  border-radius: 20px;
+
+}
+.content{
+  display: flex;
+  justify-content: center;
+ align-items: center; 
+ 
+}
+
+.content .mision{
+  border: 1px solid blue;
+  box-shadow: 2px 2px 12px;
+  border-radius: 15px;
+
+}
+.content .vision{
+  border: 1px solid blue;
+  box-shadow: 2px 2px 12px;
+  border-radius: 15px;
+}
+
+.mision {
+  width: 48%;
+  background-image: url(../assets/mision1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 12px;
+  padding: 12px;
+}
+.vision {
+  width: 48%;
+  background-image: url(../assets/vision.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 12px;
+}
+
+.nosotros-p {
+  
+  width: 90%;
+  border:none;
+  font-size: 18px;
+  padding: 12px;
+}
+/* pagina servicios// 
+  grid-template-columns:  6fr 4fr;
+  grid-template-rows: repeat(2, 4fr); */
+
+.container{
+  display:flex;
+  justify-content: center;
+  
+  width: 100%;
+  height: 18rem;
+
+
+}
+.servicios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:auto;
+  margin:4px;
+  padding: 24px;
+
+}
+.s-row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.s-row p{
+width: 70%;
+height: auto;
+padding: .75rem;
+border: none;
+}
+.s-img{
+  width: 25%;
+  padding-right: 1.5625rem;
+
+}
+
+.carrusel {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin: 12px;
+  padding: 12px;
+  background-color: bisque;
+  border: 1px solid #020e00;;
+}
+
+.carrusel img {
+  width: 48%;
+  height:auto;
+  padding: 12px;
+  border: radius 20px;}
+
+/*Formulario Servicios*/
+
+.form { 
+  align-content: center;
+  margin: auto;
+  width: 70%;
+  height: 500px;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+.opcion{
+  height: 40px;
+  padding: 18px;
+  margin: 16px;
+  font-weight: bold;
+
+}
+.opcion label {
+  padding:12px;
+  margin: 8px;
+  font-weight: bold;
+}
+.otro{
+  padding:4px;
+  margin: 4px;
+  border-radius: 5px;
+}
+.tipos {
+  height: 60px;
+  padding: 20px;
+  margin: 16px;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+legend{
+  margin: 4px;
+  padding: 4px;
+}
+.datos {
+  padding: 18px;
+  margin: 12px;
+  font-weight: bold;
+  font-size: 24px;
+
+}
+.datos label {
+  padding: 18px;
+  margin: 12px;
+  font-weight: bold;
+  font-size: 18px;
+   
+}
+.datos input {
+  padding: 4px;
+  margin: 4px;
+  font-weight: lighter;
+  border-radius: 5px;
+  background-color: #e7e8e8;
+}
+.enviar {
+  background-color: #0df115;
+  padding: 0.5rem;
+  margin:4px;
+  font-weight:bolder;
+  border-radius:10px; 
+ }
+
+/* contactos* pagina en desarrollo*/
+
+.seccion-contactos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px double red;
+}
+
+  .datosUsuarios{
+      align-content: center;
+      margin:24px;
+      width: 50%;
+      height: 400px;
+      padding: 1.5rem;
+      border-radius: 20px;
+      border: 2px solid #0e0582;
+
+      }
+
+/*novedades pagina en desarrollo*/
+
+.vanner{
+margin: 8px;
+padding:8px;
+}
+.vanner-img{
+    width: 400px;
+    height: 350px;
+    border: 1px solid red;
+   
+}
