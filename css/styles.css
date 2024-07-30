@@ -10,27 +10,29 @@ color: #0e0582; #1aea20;#020e00;#999a9a;  Colores /
 }
 header {
   background-color: #020e00;
+  width: 100%;
 }
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
 }
 
-.logo img {
+.header img {
   width: 180px;
   border-radius: 25px;
   margin: 0 18px;
-  background-color: none;
 }
 
 /* Navegacion*/
 .nav ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .li {
-  display: inline-block;
   margin-right: 15px;
   font-size: 24px;
   line-height: 60px;
@@ -104,34 +106,40 @@ p {
 /* seccion 1de inicio*/
 .section1 {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   margin: 4px;
-  padding: 24px;
+  padding: 12px;
   background-color: rgb(172, 243, 243);
 }
 .row {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
 }
 .section1 h2 {
-  font-size: 3.8rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 12px;
 }
 .img {
-  width: 60vw;
-  height: 480px;
-  padding: 12px;
+  max-width: 100%;
+  height: auto;
   border-radius: 20px;
+  margin: 0 12px;
 }
 .cont-texto p {
-  width: 70%;
-  height: auto;
+  width: 100%;
+  max-width: 800px;
   padding: 0.75rem;
   border: none;
+  text-align: justify;
 }
 
 /* seccion 2 de inicio 
@@ -182,9 +190,9 @@ p {
 .arti-1 {
   background-image: url("../assets/conciencia.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: bottom 2rem;
-  padding: 3.5rem;
+  background-size: inherit;
+  margin: 2rem;
+  padding: 1.5rem;
 }
 .arti-2 {
   margin: 1.125rem;
@@ -194,16 +202,19 @@ p {
 .row3 {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 .articulos {
   margin: 0.75rem;
   padding-left: 0.75rem;
 }
 .articulos p {
+ 
   flex-direction: row;
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height:auto;
   border: none;
+   text-align: justify;
 }
 
 /* footer*/
@@ -212,7 +223,10 @@ footer {
   background-color: #020e00;
   padding: 12px;
   margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .footer-container {
   display: grid;
   grid-template-columns: 4fr 3fr 3fr;
@@ -222,20 +236,21 @@ footer {
   height: 18rem;
 }
 .foot-rows {
+  flex-direction: column;
   align-items: center;
   background-color: #999a9a;
   border-radius: 0.9375rem;
   margin: 0.25rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  text-align: justify; 
 }
 
 .f-texto {
-  width: 90%;
-  text-align: center;
+  width: 100%;
   border: none;
   color: #050229;
+  text-align: justify;
 }
-
 .pagos {
   display: flex;
   flex-direction: column;
@@ -268,8 +283,8 @@ footer {
   padding: 12px;
 }
 .copy {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
   color: #999a9a;
   font-size: 0.875rem;
   padding: 12px;
@@ -355,9 +370,7 @@ footer {
   font-size: 18px;
   padding: 12px;
 }
-/* pagina servicios// 
-  grid-template-columns:  6fr 4fr;
-  grid-template-rows: repeat(2, 4fr); */
+/* pagina servicios/*/ 
 
 .container {
   display: flex;
@@ -472,7 +485,7 @@ legend {
   border-radius: 10px;
 }
 
-/* contactos* página con Bootstrap*/
+/* contactos* página con Bootstrap incompleta en proceso */
 
 .s-contacto {
   display: flex;
@@ -481,9 +494,8 @@ legend {
   flex-wrap: wrap;
 }
 
-.s-contacto h2{
+.s-contacto h2 {
   margin-top: 2rem;
-
 }
 .s-cont {
   display: flex;
@@ -523,7 +535,7 @@ legend {
 .card {
   box-shadow: 2px 4px 8px 4px #050229;
 }
-.card-title{
+.card-title {
   color: #0e0582;
 }
 
@@ -542,25 +554,25 @@ legend {
 .form-label {
   font-weight: bold;
   color: #050229;
-
 }
-input{
+input {
   background-color: #aef0f3;
 }
 
-.articulos{
+.articulos {
   display: flex;
   flex-wrap: wrap;
-
 }
 .a-ifram iframe {
   margin: 18px;
   align-content: center;
+
+  .container-fluid {
+    justify-content: space-between;
+
+  }
 }
-
-
-
-/*novedades pagina en desarrollo*/
+/*Novedades pagina en desarrollo pendiente */
 
 .vanner {
   margin: 8px;
@@ -570,4 +582,135 @@ input{
   width: 400px;
   height: 350px;
   border: 1px solid red;
+}
+
+/* Media queries  */
+
+@media (max-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px;
+    margin: 2px;
+  }
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav li {
+    margin: 5px 0;
+  }
+  .header h1 {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .red-s {
+    padding: 5px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 h2 {
+    font-size: 2rem;
+  }
+  .img {
+    margin: 12px 0;
+  }
+  .section1 h2 {
+    font-size: 1.5rem;
+  }
+  .img {
+    margin: 8px 0;
+  }
+  .cont-texto p {
+    font-size: 0.875rem;
+  }
+
+.row3 {
+  flex-direction: column;
+  max-width: 100%;
+}
+  .arti-1 {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background-image: none;
+    font-size: 1rem;
+  }
+  .arti-2 {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .articulos p {
+    flex-direction:column;
+    width: 100%;
+    height: auto;
+    border: none;
+    text-align: justify;
+  }
+}
+ /*footer */ 
+
+@media (max-width:420px) {
+
+    .footer-container {
+      grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    gap: 10px;
+    }
+    .foot-rows {
+      padding: 1rem;
+    }
+  .contactos ul li {
+    font-size: 14px; 
+  }
+  .f-boton {
+    font-size: 14px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .nav li {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .red-s {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .redes {
+    margin: 0 5px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 h2 {
+    font-size: 2rem;
+  }
+  .img {
+    margin: 12px 0;
+  }
+  .cont-texto p {
+    width: 90%;
+  }
 }
