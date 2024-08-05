@@ -84,13 +84,13 @@ h1:hover {
 
 h2 {
   color: #0e0582;
-  font-size: 36px;
+  font-size: 24px;
   text-align: center;
   padding: 1.5rem;
 }
 h3 {
   color: #0e0582;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
 }
 p {
@@ -108,7 +108,6 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
@@ -289,86 +288,10 @@ footer {
   font-size: 0.875rem;
   padding: 12px;
 }
-
-/* pagina nosotros */
-
-.seccion1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 78rem;
-  margin: 1rem;
-  padding: 16px;
-}
-.nos1 {
-  width: 80%;
-  height: 600px;
-  border: 1px solid blue;
-  box-shadow: 2px 2px 12px;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-  border-radius: 15px;
-}
-.nos2 {
-  width: 80%;
-  height: 600px;
-  background-image: url(../assets/inspira.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  border: 1px solid blue;
-  box-shadow: 2px 2px 12px;
-  flex-direction: column;
-  margin: 12px;
-  border-radius: 15px;
-}
-.img2 {
-  width: 90%;
-  height: 280px;
-  margin: 8px 30px;
-  border-radius: 20px;
-}
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content .mision {
-  border: 1px solid blue;
-  box-shadow: 2px 2px 12px;
-  border-radius: 15px;
-}
-.content .vision {
-  border: 1px solid blue;
-  box-shadow: 2px 2px 12px;
-  border-radius: 15px;
-}
-
-.mision {
-  width: 48%;
-  background-image: url(../assets/mision1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  margin: 12px;
-  padding: 12px;
-}
-.vision {
-  width: 48%;
-  background-image: url(../assets/vision.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  margin: 12px;
-}
-
-.nosotros-p {
-  width: 90%;
-  border: none;
-  font-size: 18px;
-  padding: 12px;
+.card-text{
+  font-size: 16px;
+  color: #050229;
+  width: 100%;
 }
 /* pagina servicios/*/ 
 
@@ -484,7 +407,6 @@ legend {
   font-weight: bolder;
   border-radius: 10px;
 }
-
 /* contactos* página con Bootstrap incompleta en proceso */
 
 .s-contacto {
@@ -532,14 +454,13 @@ legend {
   font-weight: bold;
   padding: 4px;
 }
-.card {
+.card{
   box-shadow: 2px 4px 8px 4px #050229;
 }
 .card-title {
   color: #0e0582;
 }
-
-.container {
+.container-form {
   width: 65%;
   height: 32rem;
   padding: 0.75rem;
@@ -562,16 +483,23 @@ input {
 .articulos {
   display: flex;
   flex-wrap: wrap;
+  height: 44rem;
+  padding-top: 2rem;
 }
 .a-ifram iframe {
   margin: 18px;
   align-content: center;
+}
 
+footer  {
+  height: auto ;
+}
+/*
   .container-fluid {
     justify-content: space-between;
 
-  }
-}
+  }*/
+
 /*Novedades pagina en desarrollo pendiente */
 
 .vanner {
@@ -714,3 +642,7 @@ input {
     width: 90%;
   }
 }
+
+
+
+
